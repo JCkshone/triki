@@ -1,0 +1,702 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		67790E552A2A157900583483 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67790E542A2A157900583483 /* ContentViewModel.swift */; };
+		67790E582A2A1A1400583483 /* Poppins-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67790E572A2A1A1400583483 /* Poppins-medium.ttf */; };
+		67790E5A2A2A1A1F00583483 /* Poppins-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67790E592A2A1A1F00583483 /* Poppins-regular.ttf */; };
+		67790E5E2A2A1AB900583483 /* TrikiFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67790E5D2A2A1AB900583483 /* TrikiFont.swift */; };
+		67CEE9A02A2033C60034C61E /* trikiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CEE99F2A2033C60034C61E /* trikiApp.swift */; };
+		67CEE9A22A2033C60034C61E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CEE9A12A2033C60034C61E /* ContentView.swift */; };
+		67CEE9A42A2033C70034C61E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67CEE9A32A2033C70034C61E /* Assets.xcassets */; };
+		67CEE9A72A2033C70034C61E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67CEE9A62A2033C70034C61E /* Preview Assets.xcassets */; };
+		67CEE9B12A2033C70034C61E /* trikiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CEE9B02A2033C70034C61E /* trikiTests.swift */; };
+		67CEE9BB2A2033C70034C61E /* trikiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CEE9BA2A2033C70034C61E /* trikiUITests.swift */; };
+		67CEE9BD2A2033C70034C61E /* trikiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CEE9BC2A2033C70034C61E /* trikiUITestsLaunchTests.swift */; };
+		67CEE9D42A20681F0034C61E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67CEE9D32A20681F0034C61E /* Colors.xcassets */; };
+		67CEE9D82A2068790034C61E /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CEE9D72A2068790034C61E /* Assets.swift */; };
+		67CEE9DC2A2069820034C61E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CEE9DB2A2069820034C61E /* Color.swift */; };
+		67CEE9DE2A2069B80034C61E /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CEE9DD2A2069B80034C61E /* Image.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		67CEE9AD2A2033C70034C61E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67CEE9942A2033C60034C61E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67CEE99B2A2033C60034C61E;
+			remoteInfo = triki;
+		};
+		67CEE9B72A2033C70034C61E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67CEE9942A2033C60034C61E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67CEE99B2A2033C60034C61E;
+			remoteInfo = triki;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		67790E542A2A157900583483 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		67790E572A2A1A1400583483 /* Poppins-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-medium.ttf"; sourceTree = "<group>"; };
+		67790E592A2A1A1F00583483 /* Poppins-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-regular.ttf"; sourceTree = "<group>"; };
+		67790E5B2A2A1A6300583483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		67790E5D2A2A1AB900583483 /* TrikiFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrikiFont.swift; sourceTree = "<group>"; };
+		67CEE99C2A2033C60034C61E /* triki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = triki.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		67CEE99F2A2033C60034C61E /* trikiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trikiApp.swift; sourceTree = "<group>"; };
+		67CEE9A12A2033C60034C61E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		67CEE9A32A2033C70034C61E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		67CEE9A62A2033C70034C61E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		67CEE9AC2A2033C70034C61E /* trikiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = trikiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67CEE9B02A2033C70034C61E /* trikiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trikiTests.swift; sourceTree = "<group>"; };
+		67CEE9B62A2033C70034C61E /* trikiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = trikiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67CEE9BA2A2033C70034C61E /* trikiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trikiUITests.swift; sourceTree = "<group>"; };
+		67CEE9BC2A2033C70034C61E /* trikiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trikiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		67CEE9D32A20681F0034C61E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		67CEE9D72A2068790034C61E /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		67CEE9DB2A2069820034C61E /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		67CEE9DD2A2069B80034C61E /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		67CEE9992A2033C60034C61E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67CEE9A92A2033C70034C61E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67CEE9B32A2033C70034C61E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		67790E532A2A156800583483 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				67790E542A2A157900583483 /* ContentViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		67790E562A2A19DC00583483 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				67790E592A2A1A1F00583483 /* Poppins-regular.ttf */,
+				67790E572A2A1A1400583483 /* Poppins-medium.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		67790E5C2A2A1AAC00583483 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				67790E5D2A2A1AB900583483 /* TrikiFont.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		67CEE9932A2033C60034C61E = {
+			isa = PBXGroup;
+			children = (
+				67CEE99E2A2033C60034C61E /* triki */,
+				67CEE9AF2A2033C70034C61E /* trikiTests */,
+				67CEE9B92A2033C70034C61E /* trikiUITests */,
+				67CEE99D2A2033C60034C61E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		67CEE99D2A2033C60034C61E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67CEE99C2A2033C60034C61E /* triki.app */,
+				67CEE9AC2A2033C70034C61E /* trikiTests.xctest */,
+				67CEE9B62A2033C70034C61E /* trikiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		67CEE99E2A2033C60034C61E /* triki */ = {
+			isa = PBXGroup;
+			children = (
+				67790E5B2A2A1A6300583483 /* Info.plist */,
+				67790E532A2A156800583483 /* ViewModels */,
+				67CEE9D92A20696A0034C61E /* Common */,
+				67CEE9D22A2066E90034C61E /* Resources */,
+				67CEE99F2A2033C60034C61E /* trikiApp.swift */,
+				67CEE9A12A2033C60034C61E /* ContentView.swift */,
+				67CEE9A52A2033C70034C61E /* Preview Content */,
+			);
+			path = triki;
+			sourceTree = "<group>";
+		};
+		67CEE9A52A2033C70034C61E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				67CEE9A62A2033C70034C61E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		67CEE9AF2A2033C70034C61E /* trikiTests */ = {
+			isa = PBXGroup;
+			children = (
+				67CEE9B02A2033C70034C61E /* trikiTests.swift */,
+			);
+			path = trikiTests;
+			sourceTree = "<group>";
+		};
+		67CEE9B92A2033C70034C61E /* trikiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				67CEE9BA2A2033C70034C61E /* trikiUITests.swift */,
+				67CEE9BC2A2033C70034C61E /* trikiUITestsLaunchTests.swift */,
+			);
+			path = trikiUITests;
+			sourceTree = "<group>";
+		};
+		67CEE9D22A2066E90034C61E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				67790E562A2A19DC00583483 /* Fonts */,
+				67CEE9D62A2068790034C61E /* Generated */,
+				67CEE9A32A2033C70034C61E /* Assets.xcassets */,
+				67CEE9D32A20681F0034C61E /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		67CEE9D62A2068790034C61E /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				67CEE9D72A2068790034C61E /* Assets.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		67CEE9D92A20696A0034C61E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				67790E5C2A2A1AAC00583483 /* UI */,
+				67CEE9DA2A2069720034C61E /* Extension */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		67CEE9DA2A2069720034C61E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				67CEE9DB2A2069820034C61E /* Color.swift */,
+				67CEE9DD2A2069B80034C61E /* Image.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		67CEE99B2A2033C60034C61E /* triki */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67CEE9C02A2033C70034C61E /* Build configuration list for PBXNativeTarget "triki" */;
+			buildPhases = (
+				67CEE9C92A20659F0034C61E /* SwiftGen */,
+				67CEE9982A2033C60034C61E /* Sources */,
+				67CEE9992A2033C60034C61E /* Frameworks */,
+				67CEE99A2A2033C60034C61E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = triki;
+			productName = triki;
+			productReference = 67CEE99C2A2033C60034C61E /* triki.app */;
+			productType = "com.apple.product-type.application";
+		};
+		67CEE9AB2A2033C70034C61E /* trikiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67CEE9C32A2033C70034C61E /* Build configuration list for PBXNativeTarget "trikiTests" */;
+			buildPhases = (
+				67CEE9A82A2033C70034C61E /* Sources */,
+				67CEE9A92A2033C70034C61E /* Frameworks */,
+				67CEE9AA2A2033C70034C61E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67CEE9AE2A2033C70034C61E /* PBXTargetDependency */,
+			);
+			name = trikiTests;
+			productName = trikiTests;
+			productReference = 67CEE9AC2A2033C70034C61E /* trikiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		67CEE9B52A2033C70034C61E /* trikiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67CEE9C62A2033C70034C61E /* Build configuration list for PBXNativeTarget "trikiUITests" */;
+			buildPhases = (
+				67CEE9B22A2033C70034C61E /* Sources */,
+				67CEE9B32A2033C70034C61E /* Frameworks */,
+				67CEE9B42A2033C70034C61E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67CEE9B82A2033C70034C61E /* PBXTargetDependency */,
+			);
+			name = trikiUITests;
+			productName = trikiUITests;
+			productReference = 67CEE9B62A2033C70034C61E /* trikiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		67CEE9942A2033C60034C61E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					67CEE99B2A2033C60034C61E = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					67CEE9AB2A2033C70034C61E = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 67CEE99B2A2033C60034C61E;
+					};
+					67CEE9B52A2033C70034C61E = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 67CEE99B2A2033C60034C61E;
+					};
+				};
+			};
+			buildConfigurationList = 67CEE9972A2033C60034C61E /* Build configuration list for PBXProject "triki" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 67CEE9932A2033C60034C61E;
+			productRefGroup = 67CEE99D2A2033C60034C61E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				67CEE99B2A2033C60034C61E /* triki */,
+				67CEE9AB2A2033C70034C61E /* trikiTests */,
+				67CEE9B52A2033C70034C61E /* trikiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		67CEE99A2A2033C60034C61E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67CEE9D42A20681F0034C61E /* Colors.xcassets in Resources */,
+				67790E582A2A1A1400583483 /* Poppins-medium.ttf in Resources */,
+				67CEE9A72A2033C70034C61E /* Preview Assets.xcassets in Resources */,
+				67CEE9A42A2033C70034C61E /* Assets.xcassets in Resources */,
+				67790E5A2A2A1A1F00583483 /* Poppins-regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67CEE9AA2A2033C70034C61E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67CEE9B42A2033C70034C61E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		67CEE9C92A20659F0034C61E /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n./Configuration/Swiftgen/Assets.sh\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		67CEE9982A2033C60034C61E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67CEE9A22A2033C60034C61E /* ContentView.swift in Sources */,
+				67CEE9DC2A2069820034C61E /* Color.swift in Sources */,
+				67790E552A2A157900583483 /* ContentViewModel.swift in Sources */,
+				67CEE9A02A2033C60034C61E /* trikiApp.swift in Sources */,
+				67CEE9D82A2068790034C61E /* Assets.swift in Sources */,
+				67790E5E2A2A1AB900583483 /* TrikiFont.swift in Sources */,
+				67CEE9DE2A2069B80034C61E /* Image.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67CEE9A82A2033C70034C61E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67CEE9B12A2033C70034C61E /* trikiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67CEE9B22A2033C70034C61E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67CEE9BD2A2033C70034C61E /* trikiUITestsLaunchTests.swift in Sources */,
+				67CEE9BB2A2033C70034C61E /* trikiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		67CEE9AE2A2033C70034C61E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67CEE99B2A2033C60034C61E /* triki */;
+			targetProxy = 67CEE9AD2A2033C70034C61E /* PBXContainerItemProxy */;
+		};
+		67CEE9B82A2033C70034C61E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67CEE99B2A2033C60034C61E /* triki */;
+			targetProxy = 67CEE9B72A2033C70034C61E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		67CEE9BE2A2033C70034C61E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		67CEE9BF2A2033C70034C61E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		67CEE9C12A2033C70034C61E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"triki/Preview Content\"";
+				DEVELOPMENT_TEAM = 8D755DRTSY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = triki/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.triki;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		67CEE9C22A2033C70034C61E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"triki/Preview Content\"";
+				DEVELOPMENT_TEAM = 8D755DRTSY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = triki/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.triki;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		67CEE9C42A2033C70034C61E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8D755DRTSY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trikiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/triki.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/triki";
+			};
+			name = Debug;
+		};
+		67CEE9C52A2033C70034C61E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8D755DRTSY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trikiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/triki.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/triki";
+			};
+			name = Release;
+		};
+		67CEE9C72A2033C70034C61E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8D755DRTSY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trikiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = triki;
+			};
+			name = Debug;
+		};
+		67CEE9C82A2033C70034C61E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8D755DRTSY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trikiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = triki;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		67CEE9972A2033C60034C61E /* Build configuration list for PBXProject "triki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67CEE9BE2A2033C70034C61E /* Debug */,
+				67CEE9BF2A2033C70034C61E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67CEE9C02A2033C70034C61E /* Build configuration list for PBXNativeTarget "triki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67CEE9C12A2033C70034C61E /* Debug */,
+				67CEE9C22A2033C70034C61E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67CEE9C32A2033C70034C61E /* Build configuration list for PBXNativeTarget "trikiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67CEE9C42A2033C70034C61E /* Debug */,
+				67CEE9C52A2033C70034C61E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67CEE9C62A2033C70034C61E /* Build configuration list for PBXNativeTarget "trikiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67CEE9C72A2033C70034C61E /* Debug */,
+				67CEE9C82A2033C70034C61E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 67CEE9942A2033C60034C61E /* Project object */;
+}

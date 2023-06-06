@@ -13,10 +13,12 @@ import SnapshotTesting
 final class TrikiPreviewTest: XCTestCase {
     
     var viewController: UIViewController!
+    var viewModel: ContentViewModel!
 
     override func setUpWithError() throws {
         try super.setUpWithError()
-        let trikiApp = ContentView()
+        viewModel = .init()
+        let trikiApp = ContentView(viewModel: self.viewModel)
         viewController = UIHostingController(rootView: trikiApp)
         
     }
@@ -24,10 +26,12 @@ final class TrikiPreviewTest: XCTestCase {
     override func tearDownWithError() throws {
         try super.tearDownWithError()
         viewController = nil
+        viewModel = nil
     }
 
     func testDarkModeView() throws {
         let traitDarkMode = UITraitCollection(userInterfaceStyle: UIUserInterfaceStyle.dark)
+        viewModel.resetGame()
         assertSnapshot(
           matching: viewController,
           as: .image(on: .iPhoneX, traits: traitDarkMode)
@@ -35,10 +39,51 @@ final class TrikiPreviewTest: XCTestCase {
     }
     
     func testDefaultView() throws {
+        viewModel.resetGame()
         assertSnapshot(
           matching: viewController,
           as: .image(on: .iPhoneX)
         )
     }
-
+    
+    func testWinLeftDiagonal() throws {
+        viewModel.gameBoard = [
+            ["X", "O", "X"],
+            ["X", "X", "O"],
+            ["X", "O", "O"]
+        ]
+        viewModel.validateDiagonal()
+        assertSnapshot(
+          matching: viewController,
+          as: .image(on: .iPhoneX)
+        )
+    }
+    
+    func testLeftDiagonal() throws {
+        viewModel.gameBoard = [
+            ["X", "O", "X"],
+            ["X", "X", "O"],
+            ["X", "O", "O"]
+        ]
+        assertSnapshot(
+          matching: viewController,
+          as: .image(on: .iPhoneX)
+        )
+    }
+    
+    func testrightDiagonal() throws {
+        viewModel.gameBoard = [
+            ["X", "O", "X"],
+            ["X", "X", "O"],
+            ["O", "O", "X"]
+        ]
+        assertSnapshot(
+          matching: viewController,
+          as: .image(on: .iPhoneX)
+        )
+    }
+    
+    func getViewModel() -> ContentViewModel {
+        ContentViewModel()
+    }
 }

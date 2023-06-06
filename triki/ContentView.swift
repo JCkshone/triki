@@ -36,7 +36,7 @@ enum StatusGame {
 }
 
 struct ContentView: View {
-    @StateObject var viewModel: ContentViewModel = ContentViewModel()
+    @StateObject var viewModel: ContentViewModel
     
     var body: some View {
         ZStack {
@@ -130,7 +130,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(viewModel: .init())
     }
 }
 

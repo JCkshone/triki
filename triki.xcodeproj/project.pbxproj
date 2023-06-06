@@ -11,6 +11,8 @@
 		67790E582A2A1A1400583483 /* Poppins-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67790E572A2A1A1400583483 /* Poppins-medium.ttf */; };
 		67790E5A2A2A1A1F00583483 /* Poppins-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67790E592A2A1A1F00583483 /* Poppins-regular.ttf */; };
 		67790E5E2A2A1AB900583483 /* TrikiFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67790E5D2A2A1AB900583483 /* TrikiFont.swift */; };
+		67790E612A2A453200583483 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 67790E602A2A453200583483 /* SnapshotTesting */; };
+		67A998412A2EF80900B182C7 /* TrikiPreviewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A998402A2EF80900B182C7 /* TrikiPreviewTest.swift */; };
 		67CEE9A02A2033C60034C61E /* trikiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CEE99F2A2033C60034C61E /* trikiApp.swift */; };
 		67CEE9A22A2033C60034C61E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CEE9A12A2033C60034C61E /* ContentView.swift */; };
 		67CEE9A42A2033C70034C61E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67CEE9A32A2033C70034C61E /* Assets.xcassets */; };
@@ -47,6 +49,7 @@
 		67790E592A2A1A1F00583483 /* Poppins-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-regular.ttf"; sourceTree = "<group>"; };
 		67790E5B2A2A1A6300583483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		67790E5D2A2A1AB900583483 /* TrikiFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrikiFont.swift; sourceTree = "<group>"; };
+		67A998402A2EF80900B182C7 /* TrikiPreviewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrikiPreviewTest.swift; sourceTree = "<group>"; };
 		67CEE99C2A2033C60034C61E /* triki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = triki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67CEE99F2A2033C60034C61E /* trikiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trikiApp.swift; sourceTree = "<group>"; };
 		67CEE9A12A2033C60034C61E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67790E612A2A453200583483 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				67CEE9B02A2033C70034C61E /* trikiTests.swift */,
+				67A998402A2EF80900B182C7 /* TrikiPreviewTest.swift */,
 			);
 			path = trikiTests;
 			sourceTree = "<group>";
@@ -244,6 +249,9 @@
 				67CEE9AE2A2033C70034C61E /* PBXTargetDependency */,
 			);
 			name = trikiTests;
+			packageProductDependencies = (
+				67790E602A2A453200583483 /* SnapshotTesting */,
+			);
 			productName = trikiTests;
 			productReference = 67CEE9AC2A2033C70034C61E /* trikiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -298,6 +306,9 @@
 				Base,
 			);
 			mainGroup = 67CEE9932A2033C60034C61E;
+			packageReferences = (
+				67790E5F2A2A453200583483 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+			);
 			productRefGroup = 67CEE99D2A2033C60034C61E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -378,6 +389,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67A998412A2EF80900B182C7 /* TrikiPreviewTest.swift in Sources */,
 				67CEE9B12A2033C70034C61E /* trikiTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -697,6 +709,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		67790E5F2A2A453200583483 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		67790E602A2A453200583483 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67790E5F2A2A453200583483 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 67CEE9942A2033C60034C61E /* Project object */;
 }

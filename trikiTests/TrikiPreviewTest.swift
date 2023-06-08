@@ -10,6 +10,7 @@ import SwiftUI
 import SnapshotTesting
 @testable import triki
 
+@MainActor
 final class TrikiPreviewTest: XCTestCase {
     
     var viewController: UIViewController!
@@ -59,6 +60,31 @@ final class TrikiPreviewTest: XCTestCase {
         )
     }
     
+    func testHorizontalWin() throws {
+        viewModel.gameBoard = [
+            ["X", "X", "X"],
+            ["X", "X", "O"],
+            ["O", "O", "X"]
+        ]
+        viewModel.validateHorizontal()
+        assertSnapshot(
+          matching: viewController,
+          as: .image(on: .iPhoneX)
+        )
+    }
+    func testVerticalWin() throws {
+        viewModel.gameBoard = [
+            ["X", "O", "X"],
+            ["X", "O", "O"],
+            ["x", "O", "X"]
+        ]
+        viewModel.validateVertical()
+        assertSnapshot(
+          matching: viewController,
+          as: .image(on: .iPhoneX)
+        )
+    }
+    
     func testLeftDiagonal() throws {
         viewModel.gameBoard = [
             ["X", "O", "X"],
@@ -71,11 +97,35 @@ final class TrikiPreviewTest: XCTestCase {
         )
     }
     
-    func testrightDiagonal() throws {
+    func testRightDiagonal() throws {
         viewModel.gameBoard = [
             ["X", "O", "X"],
             ["X", "X", "O"],
             ["O", "O", "X"]
+        ]
+        assertSnapshot(
+          matching: viewController,
+          as: .image(on: .iPhoneX)
+        )
+    }
+    
+    func testHorizontal() throws {
+        viewModel.gameBoard = [
+            ["X", "X", "X"],
+            ["X", "X", "O"],
+            ["O", "O", "X"]
+        ]
+        assertSnapshot(
+          matching: viewController,
+          as: .image(on: .iPhoneX)
+        )
+    }
+    
+    func testVertical() throws {
+        viewModel.gameBoard = [
+            ["X", "O", "X"],
+            ["X", "O", "O"],
+            ["x", "O", "X"]
         ]
         assertSnapshot(
           matching: viewController,

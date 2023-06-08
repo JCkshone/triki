@@ -24,6 +24,7 @@
 		67CEE9D82A2068790034C61E /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CEE9D72A2068790034C61E /* Assets.swift */; };
 		67CEE9DC2A2069820034C61E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CEE9DB2A2069820034C61E /* Color.swift */; };
 		67CEE9DE2A2069B80034C61E /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CEE9DD2A2069B80034C61E /* Image.swift */; };
+		67D2A7DD2A2FBD39002F0F7F /* SnapshotTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D2A7DC2A2FBD39002F0F7F /* SnapshotTesting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		67CEE9D72A2068790034C61E /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		67CEE9DB2A2069820034C61E /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		67CEE9DD2A2069B80034C61E /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		67D2A7DC2A2FBD39002F0F7F /* SnapshotTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotTesting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 		67CEE9AF2A2033C70034C61E /* trikiTests */ = {
 			isa = PBXGroup;
 			children = (
+				67D2A7DB2A2FBD0B002F0F7F /* Helper */,
 				67CEE9B02A2033C70034C61E /* trikiTests.swift */,
 				67A998402A2EF80900B182C7 /* TrikiPreviewTest.swift */,
 			);
@@ -212,6 +215,14 @@
 				67CEE9DD2A2069B80034C61E /* Image.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		67D2A7DB2A2FBD0B002F0F7F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				67D2A7DC2A2FBD39002F0F7F /* SnapshotTesting.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,6 +402,7 @@
 			files = (
 				67A998412A2EF80900B182C7 /* TrikiPreviewTest.swift in Sources */,
 				67CEE9B12A2033C70034C61E /* trikiTests.swift in Sources */,
+				67D2A7DD2A2FBD39002F0F7F /* SnapshotTesting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,16 @@
 import Foundation
 import SwiftUI
 
-class ContentViewModel: ObservableObject {
+protocol ContentViewModelProtocol {
+    func resetGame()
+    func cellTapped(row: Int, col: Int)
+    func validateFinishedGame()
+    func validateHorizontal()
+    func validateDiagonal()
+    func validateResults(with items: [String])
+}
+
+class ContentViewModel: ObservableObject, ContentViewModelProtocol {
     @Published var gameBoard: [[String]] = Array(repeating: Array(repeating: "", count: 3), count: 3)
     @Published var currentPlayer = "X"
     @Published var status: StatusGame = .startGame

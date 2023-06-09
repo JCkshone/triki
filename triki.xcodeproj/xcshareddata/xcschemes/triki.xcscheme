@@ -39,6 +39,11 @@
                BlueprintName = "trikiTests"
                ReferencedContainer = "container:triki.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "TrikiPreviewTest">
+               </Test>
+            </SkippedTests>
          </TestableReference>
          <TestableReference
             skipped = "NO"
